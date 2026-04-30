@@ -18,8 +18,8 @@ def download_model():
         print("Model downloaded successfully.")
 
 #Load class mapping
-with open("model/class_to_idx.json", "r") as f:
-    class_to_idx = json.load(f)
+# with open("model/class_to_idx.json", "r") as f:
+#     class_to_idx = json.load(f)
 
 def load_model():
     download_model()
