@@ -5,9 +5,9 @@ from services.inference import load_model, predict
 from utils.preprocessing import preprocess
 
 # UI SETUP
-st.set_page_config(page_title="WildScan AI", layout="centered")
+st.set_page_config(page_title="DeepWild", layout="centered")
 
-st.title("🐾 WildScan AI")
+st.title("🐾 DeepWild")
 st.write("Upload an animal image to classify it into 8 categories.")
 
 # LOAD MODEL
@@ -23,8 +23,8 @@ model = get_model()
 
 # CLASS LABELS
 classes = [
-    "bird", "monkey_prosimian", "leopard", "hog",
-    "civet_genet", "antelope_duiker", "blank", "rodent"
+    "antelope_duiker", "blank", "civet_genet", "hog",
+    "leopard", "monkey_prosimian", "rodent"
 ]
 
 # FILE UPLOAD
