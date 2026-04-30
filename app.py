@@ -5,9 +5,9 @@ from services.inference import load_model, predict
 from utils.preprocessing import preprocess
 
 # UI SETUP
-st.set_page_config(page_title="WildScan AI", layout="centered")
+st.set_page_config(page_title="DeepWild", layout="centered")
 
-st.title("🐾 WildScan AI")
+st.title("🐾 DeepWild")
 st.write("Upload an animal image to classify it into 8 categories.")
 
 # LOAD MODEL
@@ -49,7 +49,7 @@ if uploaded_file:
 
         st.success(f"Prediction: **{result}**")
         st.write(f"Confidence: {confidence:.2%}")
-        
+
 # import streamlit as st
 # from PIL import Image
 
